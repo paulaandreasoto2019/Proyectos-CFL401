@@ -112,7 +112,7 @@ public class SotoTestArrayList {
              System.out.println("El nombre de la mascota es: " + mascota.getNombre() + mascota.getPatas() + mascota.getEdad());
              
 
-            //System.out.println(((Mascotas)it.next()).getNombre());//itmuestra el siguiente elemento de la clase Mascotas
+            //System.out.println(((Mascotas)it.next()).getNombre()) ;//itmuestra el siguiente elemento de la clase Mascotas
                                                                    //y despues le pregunta que le muestre el getNombre que esta dentro de mascotas
              
              
