@@ -1,3 +1,5 @@
+package soto.test.arraylist;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,8 +12,19 @@
  */
 public class Mascotas {
     public String nombre;
-    public int edad;
     public int patas;
+    public int edad;
+
+    public Mascotas(String nombre, int patas, int edad) {
+        this.nombre = nombre;
+        this.patas = patas;
+        this.edad = edad;
+    }
+    
+    public Mascotas(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
 
     public String getNombre() {
         return nombre;
