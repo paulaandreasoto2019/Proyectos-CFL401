@@ -19,8 +19,11 @@ public class SotoTestArrayList {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      int dato,eleccionPat,eleccionEdad;
-      String eleccionNom;
+      
+
+
+      //int dato,eleccionPat,eleccionEdad;
+      //String eleccionNom;
     
         //System.out.println("Buenas tardes");
        
@@ -58,7 +61,7 @@ public class SotoTestArrayList {
             System.out.println(e.toString());
         }         
         */ 
-        ArrayList <Mascotas> mascotas = new ArrayList();
+        //ArrayList <Mascotas> mascotas = new ArrayList();
         
         
         //Mascotas perro1 = new Mascotas("Tory",4,22); //new sirve para crear un objeto nuevo
@@ -72,44 +75,45 @@ public class SotoTestArrayList {
         //System.out.println(mascotas);
         
         //mascotas.add("Tory", 4 , 22);Esto esta mal
-        mascotas.add(new Mascotas("Tory", 4, 22));//Aca la clase Mascotas se mete en la variable mascotas
-        mascotas.add(new Mascotas("Mish", 3, 10)); //Se hace con los tres animales.
-        mascotas.add(new Mascotas("Poli", 2, 25));//Aca no hace falta crear una nueva variable
+        //mascotas.add(new Mascotas("Tory", 4, 22));//Aca la clase Mascotas se mete en la variable mascotas
+        //mascotas.add(new Mascotas("Mish", 3, 10)); //Se hace con los tres animales.
+        //mascotas.add(new Mascotas("Poli", 2, 25));//Aca no hace falta crear una nueva variable
         //System.out.println(mascotas);
         
         //System.out.println("Ingrese el nombre de su mascota");
          
-        Scanner entrada = new Scanner(System. in);
+        //Scanner entrada = new Scanner(System. in);
          
-         eleccionNom = entrada.nextLine();
+         //eleccionNom = entrada.nextLine();
          
-         while(!eleccionNom.toUpperCase().equals("salir".toUpperCase())){
+         //while(!eleccionNom.toUpperCase().equals("salir".toUpperCase())){
              
          //while(!eleccionNom.equals("salir")){//Quiere decir que eleccion cambia de false a true.
              
-             eleccionPat = entrada.nextInt();//debo llenar las variables nates de meterlas en mascotas.
-             eleccionEdad = entrada.nextInt();
+            // eleccionPat = entrada.nextInt();//debo llenar las variables nates de meterlas en mascotas.
+            // eleccionEdad = entrada.nextInt();
             
-             mascotas.add(new Mascotas(eleccionNom,eleccionPat,eleccionEdad));
-             entrada.nextLine();
-             eleccionNom = entrada.nextLine();
-         }
+             //mascotas.add(new Mascotas(eleccionNom,eleccionPat,eleccionEdad));
+             //entrada.nextLine();//simepre tiene que ir antes de lña linea de abajo para que limpie todo y la vuelva a llenar.
+             
+             //eleccionNom = entrada.nextLine();
+         //}
           
          //System.out.println(mascotas);
          
          //Iterator te dice que hay adentro de cada cuadrado que se creo
          
-         Iterator it = mascotas.iterator();//Iterator va a revisar a mascotas.
+         //Iterator it = mascotas.iterator();//Iterator va a revisar a mascotas.
          
          //it.hasNext(); //esto se usa para decir preguntar si hay un proximo elemento y como respuesta da un true o false.
          //it.next();//next me va a dar el proximo elemento. esta dos lineas van juntas.
                    // primero pregunta y despues la busca.
                    
-         while(it.hasNext()){
+         //while(it.hasNext()){
            
-             Mascotas mascota = (Mascotas)it.next();
+             //Mascotas mascota = (Mascotas)it.next();
             
-             System.out.println("El nombre de la mascota es: " + mascota.getNombre() + mascota.getPatas() + mascota.getEdad());
+             //System.out.println("El nombre de la mascota es: " + mascota.getNombre() + mascota.getPatas() + mascota.getEdad());
              
 
             //System.out.println(((Mascotas)it.next()).getNombre()) ;//itmuestra el siguiente elemento de la clase Mascotas
@@ -117,17 +121,36 @@ public class SotoTestArrayList {
              
              
              
-           
-             
-        
-         }
+          //}
          
-         
-             
-         
-        }
+       Persona per1 = new Persona("Jose Luis", 45);//Creamos dos objetos que en este caso es persana.
+       Persona per2 = new Persona("Marta", 53);// A partir de ahora todo lo que creamos son objetos.
+       Mascotas perro = new Mascotas("Boby", 4, 7);
+       Mascotas gato = new Mascotas("Sultàn", 4, 2);
+       Mascotas loro = new Mascotas("Pepe", 2, 10);
        
+       per1.agregarMascota(perro);
+       per2.agregarMascota(gato);
+       per1.agregarMascota(loro);
+       
+       gato.setEdad(gato.getEdad() + 1);//dentro de los parentesis le pregunto al gato
+                                        //que edad tiene y luego le sumo 1.
+       //Otro ejemplo es int edad = gato.getEdad();
+       //edad++ // edad =edad + 1 // edad + = 1
+       
+       //gato.setEdad(edad);
+       
+       System.out.println("Sultan cumpliò :" + gato.getEdad() + "años");
+       
+       System.out.println(per1.cuantasMascotasTenes());
+         }     
+        
+       
+            
+
+        
+}   
       
-    }
+    
     
 
